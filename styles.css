@@ -1,0 +1,266 @@
+:root {
+  --bg-color: #f3e5d8;
+  --card-bg: #ffffff;
+  --text-color: #333;
+  --border-color: #e0e0e0;
+  --accent-color: #7b284f;
+  --inactive-color: #808080;
+  --preperation-bg: #fff7fc;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+  font-family: 'YoungSerif-Regular', 'Outfit-VariableFont_wght', Arial,
+    sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Outfit-VariableFont_wght';
+  src: url('./assets/fonts/outfit/Outfit-VariableFont_wght.ttf')
+    format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'YoungSerif-Regular';
+  src: url('./assets/fonts/young-serif/YoungSerif-Regular.ttf')
+    format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.container {
+  padding: 30px;
+  border-radius: 20px;
+  width: 800px;
+  margin: 100px auto;
+  background-color: var(--card-bg);
+  color: #333;
+}
+
+img {
+  width: 100%;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+.title h1 {
+  margin-bottom: 20px;
+}
+
+/* preperation start */
+.preperation {
+  padding: 20px;
+  margin-top: 30px;
+  background-color: var(--preperation-bg);
+  font-family: 'Outfit-VariableFont_wght';
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+.dotText {
+  display: none;
+}
+
+.preperation ul {
+  padding-left: 20px; /* Add padding for indentation */
+}
+
+.preperation ul li,
+h2 {
+  color: var(--accent-color);
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.preperation ul li b,
+.preperation ul li span {
+  color: var(--text-color);
+}
+
+.ingre,
+.insru {
+  margin-bottom: 30px;
+}
+
+.ingre p {
+  margin-bottom: 20px;
+}
+
+.ingre ul li {
+  font-family: 'Outfit-VariableFont_wght';
+  list-style-position: inside;
+}
+
+hr {
+  background-color: #333;
+  height: 2px;
+  margin: 10px 0 20px;
+}
+
+/* instruction start */
+.instru {
+  /* margin: 20px; */
+  font-family: 'YoungSerif-Regular';
+  margin-bottom: 20px;
+}
+
+.instru ol {
+  font-family: 'Outfit-VariableFont_wght';
+}
+
+ol {
+  width: 80%;
+  margin-left: 20px;
+  list-style-position: outside;
+  margin-right: 10px;
+}
+
+ol li div {
+  display: flex;
+}
+
+.test {
+  display: none;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+/* nutrition start */
+.nutrition p {
+  font-family: 'Outfit-VariableFont_wght';
+}
+
+.row {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 40px;
+  margin-top: 20px;
+  font-family: 'Outfit-VariableFont_wght';
+}
+
+.col2 {
+  font-weight: bold;
+}
+
+.col1 {
+  width: 50%;
+  margin-bottom: 10px;
+}
+
+.col2 {
+  color: var(--accent-color);
+}
+
+@media (max-width: 768px) {
+  body {
+    background-color: var(--bg-color);
+  }
+  .container {
+    width: 100%;
+    margin: 0;
+    text-wrap: wrap;
+    border-radius: 0;
+  }
+
+  .imgContainer {
+    width: 100%;
+  }
+
+  /* attribution */
+  .attribution {
+    background-color: var(--card-bg);
+  }
+}
+
+@media (max-width: 376px) {
+  .container {
+    width: 100%;
+    padding: 0;
+  }
+
+  .imgContainer img {
+    border-radius: 0;
+    margin-bottom: -10px;
+  }
+
+  .othersContainer {
+    padding: 30px;
+  }
+
+  .preperation {
+    background-color: var(--preperation-bg);
+  }
+
+  .dot {
+    color: var(--accent-color);
+    margin-right: -10px;
+  }
+
+  ul {
+    width: 80%;
+  }
+
+  .firstLi {
+    display: none;
+  }
+
+  .preperation ul:first-child {
+    background-color: red;
+    display: none;
+  }
+
+  .dotText {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .dotText .dot {
+    font-size: 3rem;
+    margin-right: 15px;
+    margin-top: -25px;
+  }
+
+  .text {
+    width: 80%;
+    font-size: 1.1rem;
+  }
+
+  .text b {
+    margin-left: -1px;
+  }
+  li div {
+    /* background-color: lightblue; */
+    margin-left: 10px;
+  }
+
+  li div b {
+    margin-left: -1px;
+  }
+
+  /* .instru start */
+  ol li div {
+    background-color: lightblue;
+  }
+
+  /* attribution */
+  .attribution {
+    background-color: var(--card-bg);
+  }
+}
