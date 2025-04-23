@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&family=Outfit:wght@400;700&display=swap');
+
 :root {
   --bg-color: #f3e5d8;
   --card-bg: #ffffff;
@@ -12,30 +14,13 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
   transition: background-color 0.3s, color 0.3s;
-  font-family: 'YoungSerif-Regular', 'Outfit-VariableFont_wght', Arial,
-    sans-serif;
+  font-family: 'Young Serif', 'Outfit', Arial, sans-serif;
 }
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
-
-@font-face {
-  font-family: 'Outfit-VariableFont_wght';
-  src: url('./assets/fonts/outfit/Outfit-VariableFont_wght.ttf')
-    format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'YoungSerif-Regular';
-  src: url('./assets/fonts/young-serif/YoungSerif-Regular.ttf')
-    format('truetype');
-  font-weight: normal;
-  font-style: normal;
 }
 
 .container {
@@ -62,7 +47,7 @@ img {
   padding: 20px;
   margin-top: 30px;
   background-color: var(--preperation-bg);
-  font-family: 'Outfit-VariableFont_wght';
+  font-family: 'Outfit';
   margin-bottom: 30px;
   border-radius: 10px;
 }
@@ -103,7 +88,7 @@ li {
 }
 
 .ingre ul li {
-  font-family: 'Outfit-VariableFont_wght';
+  font-family: 'Outfit';
   list-style-position: inside;
 }
 
@@ -116,12 +101,12 @@ hr {
 /* instruction start */
 .instru {
   /* margin: 20px; */
-  font-family: 'YoungSerif-Regular';
+  font-family: 'Young Serif';
   margin-bottom: 20px;
 }
 
 .instru ol {
-  font-family: 'Outfit-VariableFont_wght';
+  font-family: 'Outfit';
 }
 
 ol {
@@ -143,7 +128,7 @@ ol li div {
 
 /* nutrition start */
 .nutrition p {
-  font-family: 'Outfit-VariableFont_wght';
+  font-family: 'Outfit';
 }
 
 .row {
@@ -151,7 +136,7 @@ ol li div {
   justify-content: flex-start;
   margin-left: 40px;
   margin-top: 20px;
-  font-family: 'Outfit-VariableFont_wght';
+  font-family: 'Outfit';
 }
 
 .col2 {
